@@ -1,1 +1,21 @@
-# create_date_watermark_using_photoshop
+# 利用Photoshop脚本为照片批量添加拍摄日期水印
+
+# 感谢
+
+本脚本参考了：laozeng, https://github.com/laozeng1024
+
+
+
+# 增加的功能
+
+1. 如果照片为横幅，则顺时针旋转90°后，再增加水印；
+2. 如果exif中没有拍摄时间，从xmp信息里取；
+3. 增加 JPEG 保存时存储质量等设置（默认保存质量为10）；
+4. 增加了水印字体设置，水印字体设置是字符串，是 postScript 名称，mac下，可以通过【字体册】应用查看；
+5. 根据分辨率的不同（基准分辨率为72），计算水印pt大小；
+
+
+
+# 使用方法
+
+Photoshop - 文件 - 脚本 - 浏览 - （打开js文件）
